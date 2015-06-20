@@ -41,12 +41,12 @@ namespace Assign1
             winPercent.Text = "Winning%: " + winCount / 4.0;
 
             // other calculations
-            int ttlPtsScorednum = Convert.ToInt32(pointsScored1.Value) + Convert.ToInt32(pointsScored2.Value) + Convert.ToInt32(pointsScored3.Value) + Convert.ToInt32(pointsScored4.Value);
+            int ttlPtsScorednum = Convert.ToInt32(PointsScored1.Text) + Convert.ToInt32(PointsScored2.Text) + Convert.ToInt32(PointsScored3.Text) + Convert.ToInt32(PointsScored4.Text);
             ttlPtsScored.Text = "Total points scored: " + Convert.ToString(ttlPtsScorednum);
-            double ttlPtsAllowednum = Convert.ToDouble(PointsAllowed1.Value) + Convert.ToDouble(PointsAllowed2.Value) + Convert.ToDouble(PointsAllowed3.Value) + Convert.ToDouble(PointsAllowed4.Value);
+            double ttlPtsAllowednum = Convert.ToDouble(PointsAllowed1.Text) + Convert.ToDouble(PointsAllowed2.Text) + Convert.ToDouble(PointsAllowed3.Text) + Convert.ToDouble(PointsAllowed4.Text);
             ttlPtsAllowed.Text = "Total points allowed: " + Convert.ToString(ttlPtsAllowednum);
             ptsDifferential.Text = "Points differential: " + Convert.ToString(ttlPtsScorednum - ttlPtsAllowednum);
-            double ttlSpectatorsnum = Convert.ToDouble(spectators1.Value) + Convert.ToDouble(spectators2.Value) + Convert.ToDouble(spectators3.Value) + Convert.ToDouble(spectators4.Value);
+            double ttlSpectatorsnum = Convert.ToDouble(spectators1.Text) + Convert.ToDouble(spectators2.Text) + Convert.ToDouble(spectators3.Text) + Convert.ToDouble(spectators4.Text);
             ttlSpectators.Text = "Total spectators: " + Convert.ToString(ttlSpectatorsnum);
             avgSpectators.Text = "Average spectators: " + Convert.ToString(ttlSpectatorsnum / 4.0); 
         }
