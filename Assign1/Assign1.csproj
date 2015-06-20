@@ -80,6 +80,7 @@
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config" />
     <Content Include="FrontEnd.Master" />
+    <None Include="Properties\PublishProfiles\COMP2007-Assign1.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
